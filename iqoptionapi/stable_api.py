@@ -530,22 +530,34 @@ class IQ_Option:
 
     def get_candles(self, ACTIVES, interval, count, endtime):
         self.api.candles.candles_data = None
+        
+        if ACTIVES not in OP_code.ACTIVES:
+            print('Asset {} not found in constants'.format(ACTIVES))
+            return None
+        
         while True:
             try:
-                if ACTIVES not in OP_code.ACTIVES:
-                    print('Asset {} not found on consts'.format(ACTIVES))
-                    break
-                self.api.getcandles(
-                    OP_code.ACTIVES[ACTIVES], interval, count, endtime)
-                while self.check_connect and self.api.candles.candles_data == None:
-                    pass
-                if self.api.candles.candles_data != None:
-                    break
-            except:
-                logging.error('**error** get_candles need reconnect')
+                self.api.getcandles(OP_code.ACTIVES[ACTIVES], interval, count, endtime)
+                
+                # Adiciona um pequeno atraso para evitar busy-waiting
+                start_time = time.time()
+                while self.check_connect() and self.api.candles.candles_data is None:
+                    if time.time() - start_time > 10:  # Tempo limite de 10 segundos
+                        raise TimeoutError('Timeout while waiting for candles data')
+                    time.sleep(0.1)
+                    
+                if self.api.candles.candles_data is not None:
+                    return self.api.candles.candles_data
+                    
+            except TimeoutError as te:
+                logging.error(te)
                 self.connect()
+            except Exception as e:
+                logging.error('**error** get_candles need reconnect: {}'.format(e))
+                self.connect()
+            
+            time.sleep(1)  # Aguarde um segundo antes de tentar novamente
 
-        return self.api.candles.candles_data
 
     #######################################################
     # ______________________________________________________
