@@ -1,5 +1,5 @@
 """The python wrapper for IQ Option API package setup."""
-from setuptools import (setup, find_packages)
+from setuptools import setup, find_packages
 from iqoptionapi.version_control import api_version
 
 setup(
@@ -12,5 +12,6 @@ setup(
     long_description="Best IQ Option API for python",
     url="https://github.com/wujileee/iqoptionapi.git",
     author="Wuji Lee",
+    author_email='wujiofc@gmail.com',
     zip_safe=False
 )
