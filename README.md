@@ -1,53 +1,7 @@
-Intale no python 
+Instale no python 
 ```bash
-pip install git+https://github.com/username/nome-do-repositorio.git
+pip install git+https://github.com/wujileee/iqoptionapi.git
 ```
-
-## PLANEJAMENTO DE NOVAS FEATURES 
-EN: NEW FEATURES PLANNING<br>
-ES: PLANIFICACIÓN DE NUEVAS CARACTERÍSTICAS
-
-
-- CALENDARIO ECONOMICO / ECONOMIC CALENDAR (UNDER DEVELOPMENT)
-<br><br>
-Descrição: 
-Pega o calendario econimico da iqoption.
-Essa feature vai possibilitar que vocês possar evitar fazer operações quando estiver muito arriscado.
-<br/><br/>
-
-![ECONOMIC CALENDAR](image/econimic_calendar.png)
-<br/>
-
-- FEED DE NOTICIAS/ NEWS FEED 
-<br><br>
-Descrição: 
-Noticias sobre o mercado 
-![NEWS FEED](image/news_feed.png)
-<br/><br/>
-
-## IQOPTION API SUPPORTED BY COMMUNITY
-
-This api is intended to be an open source project to communicate with iqOption site.
-this is a no official repository, it means it is maintained by community
-
-Esta API é destinada a ser um projeto de código aberto para se comunicar com o site da iqOption.
-este é um repositório não oficial, significa que é mantido pela comunidade
-
-Esta API está destinada a ser un proyecto de código abierto para comunicarse con el sitio de IqIoption.
-este es un repositorio no oficial, significa que es mantenido por la comunidad
-
-
-### IMPORTANT NOTE / NOTA IMPORTANTE 
-
-Due to the large amount of scammers that have appeared in the market, it is recommended that you DO NOT enter your password into an unknown exe or robot site that operates on iqoption because many of those have stolen people's passwords so be careful. It's best if you develop your robot or hire someone you trust.
-
-Devido a grande quantidade de golpistas que tem aparecido no mercado, recomenda-se que você NÃO inserir sua senha em exe ou sites de robo desconhecidos que opera na iqoption porque muitos desses tem roubado as senhas das pessoas então tomem cuidado. O melhor é você desenvolver seu robo ou contratar alguem de confiança. 
-
-### Canal no youtube explicando com trabalhar com a api
-
-Kodandao com Faria 
-
-https://www.youtube.com/channel/UCetDOTbLD_gCy0aI4aQwMsg
 
 <div align="center">
 	<h2> Idiomas | Languages </h2>
