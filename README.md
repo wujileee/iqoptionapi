@@ -1,30 +1,7 @@
-## AJUDE A MANTER O PROJETO ATIVO
-EN: HELP KEEPING THIS PROJECT ACTIVE <br>
-
-Para manter o projeto continuamente atualizado contribua com uma doação, com alguma correção ou melhoria.
-
-As doações serão usadas para adicionar novas features citadas abaixo.
-
-https://streamelements.com/iqoptionapi/tip
-<br><br>
-## Español - AYUDA A MANTENER ESTE PROYECTO ACTIVO 
-Para mantener el proyecto continuamente actualizado, contribuye con una donación, con cualquier corrección o mejora.
-
-Las donaciones se utilizarán para agregar nuevas funciones que se mencionan a continuación.
-
-EN: To keep the project continuously updated you can contribute with a donation or with some correction or improvement.
-
-https://streamelements.com/iqoptionapi/tip
-<br><br>
-
-## HELP KEEPING THIS PROJECT ACTIVE
-
-To keep project continuously updated, contribute with a donation, with any correction or improvement.
-
-Donations will be used to add new features mentioned below.
-
-https://streamelements.com/iqoptionapi/tip
-<br><br>
+Intale no python 
+```bash
+pip install git+https://github.com/username/nome-do-repositorio.git
+```
 
 ## PLANEJAMENTO DE NOVAS FEATURES 
 EN: NEW FEATURES PLANNING<br>
