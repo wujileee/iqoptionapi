@@ -943,7 +943,6 @@ class IQ_Option:
             except:
                 pass
             try:
-                print(self.api.buy_multi_option[req_id]["id"])
                 id = self.api.buy_multi_option[req_id]["id"]
             except:
                 pass
