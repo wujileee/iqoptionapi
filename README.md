@@ -1,8 +1,3 @@
-Instale no python 
-```bash
-pip install git+https://github.com/wujileee/iqoptionapi.git
-```
-
 <div align="center">
 	<h2> Idiomas | Languages </h2>
 	<a href="https://iqoptionapi.github.io/iqoptionapi/pt/">
